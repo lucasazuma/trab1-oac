@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/lucas/unb/2020-02/OAC/memory.h
+stdint.h
+-
+
+/home/lucas/unb/2020-02/OAC/test.c
+stdio.h
+-
+test.h
+/home/lucas/unb/2020-02/OAC/test.h
+memory.h
+/home/lucas/unb/2020-02/OAC/memory.h
+
+/home/lucas/unb/2020-02/OAC/test.h
+memory.h
+/home/lucas/unb/2020-02/OAC/memory.h
+
