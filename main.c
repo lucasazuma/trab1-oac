@@ -1,6 +1,13 @@
 #include <stdio.h>
 #include "./test.h"
 
+/*
+ * Sistema Operacional: Linux
+ * IDE: Clion
+ * para compilar e rodar:
+ *  -compilar:  gcc main.c test.c validations.c memory.c binary.c
+ *  -rodar: ./a.out
+ */
 
 int main() {
     reset_memory();
