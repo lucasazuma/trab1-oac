@@ -2,6 +2,12 @@
 #include "./test.h"
 
 /*
+ * Nome: Lucas Azuma Pelicioni Ishiruji
+ * Matricula: 180061623
+ * Disciplina: Organização e Arquitetura de Computadores
+ * Turma: C
+ * Trabalho 1, acesso à memória RISC-V
+ * Resumo: simular o acesso a memória RISC-V
  * Sistema Operacional: Linux
  * IDE: Clion
  * compilador: gcc
