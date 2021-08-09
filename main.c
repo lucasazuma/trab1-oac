@@ -4,6 +4,7 @@
 /*
  * Sistema Operacional: Linux
  * IDE: Clion
+ * compilador: gcc
  * para compilar e rodar:
  *  -compilar:  make compile
  *  -rodar: make run
