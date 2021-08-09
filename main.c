@@ -1,14 +1,6 @@
 #include <stdio.h>
-#include "memory.h"
-#include "test.h"
+#include "./test.h"
 
-/*
- * IDE: Clion
- * Sistema Operacional: Linux
- * Para rodar o programa:
- * compilar com gcc
- * rodar com ./a.out
- */
 
 int main() {
     reset_memory();

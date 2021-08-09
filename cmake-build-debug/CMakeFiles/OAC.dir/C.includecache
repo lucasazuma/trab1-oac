@@ -6,19 +6,33 @@
 
 #IncludeRegexTransform: 
 
+/home/lucas/unb/2020-02/OAC/binary.h
+
+/home/lucas/unb/2020-02/OAC/main.c
+stdio.h
+-
+./test.h
+/home/lucas/unb/2020-02/OAC/test.h
+
+/home/lucas/unb/2020-02/OAC/memory.c
+stdio.h
+-
+memory.h
+/home/lucas/unb/2020-02/OAC/memory.h
+validations.h
+/home/lucas/unb/2020-02/OAC/validations.h
+binary.h
+/home/lucas/unb/2020-02/OAC/binary.h
+
 /home/lucas/unb/2020-02/OAC/memory.h
 stdint.h
 -
 
-/home/lucas/unb/2020-02/OAC/test.c
-stdio.h
--
-test.h
 /home/lucas/unb/2020-02/OAC/test.h
 memory.h
 /home/lucas/unb/2020-02/OAC/memory.h
 
-/home/lucas/unb/2020-02/OAC/test.h
+/home/lucas/unb/2020-02/OAC/validations.h
 memory.h
 /home/lucas/unb/2020-02/OAC/memory.h
 

@@ -62,25 +62,25 @@ void sb(uint32_t address, int32_t kte, int8_t dado) {
 
     if(validates_byte_address(adr)){
         uint8_t byte_index = adr % 4;
-        int32_t finalAddress = adr - byte_index;
-        int32_t extendedValue = (dado << (byte_index * 8) & extraction_mask(byte_index));
-        uint32_t clearByteInPositionMask = ~extraction_mask(byte_index);
-        int32_t current_word = lw(finalAddress, 0);
-        int32_t dataToBeStored = (current_word & clearByteInPositionMask) | extendedValue;
-        sw(finalAddress, 0, dataToBeStored);
+        int32_t final = adr - byte_index;
+        int32_t address_value = (dado << (byte_index * 8) & extraction_mask(byte_index));
+        uint32_t clear_byte = ~extraction_mask(byte_index);
+        int32_t current_word = lw(final, 0);
+        int32_t store_value = (current_word & clear_byte) | address_value;
+        sw(final, 0, store_value);
     }else{
         return;
     }
 }
 
 int32_t lbu(uint32_t address, int32_t kte) {
-    int32_t tempAddress = address + kte;
+    int32_t adr = address + kte;
 
-    if(validates_byte_address(tempAddress)){
-        uint8_t byte_index = tempAddress % 4;
-        int32_t finalAddress = (tempAddress - byte_index) / 4;
+    if(validates_byte_address(adr)){
+        uint8_t byte_index = adr % 4;
+        int32_t address_value = (adr - byte_index) / 4;
         int32_t mask = extraction_mask(byte_index);
-        int32_t shiftedByte = int_from_byte(mem[finalAddress], mask);
+        int32_t shiftedByte = int_from_byte(mem[address_value], mask);
 
         return (int32_t)((uint32_t)shiftedByte >> (byte_index * 8));
     }else{
