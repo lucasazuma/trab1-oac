@@ -5,8 +5,8 @@
  * Sistema Operacional: Linux
  * IDE: Clion
  * para compilar e rodar:
- *  -compilar:  gcc main.c test.c validations.c memory.c binary.c
- *  -rodar: ./a.out
+ *  -compilar:  make compile
+ *  -rodar: make run
  */
 
 int main() {
